@@ -23,6 +23,8 @@ require 'action_presenter/railtie' if defined? Rails
 ## Integration
 require 'action_presenter/integration/cells_apotomo' if defined? Cell::Rails
 
+## ActionController::API
+require 'action_presenter/action_controller/api' if defined? Rails
 
 module ActionPresenter
 end

@@ -8,8 +8,8 @@ describe ActionPresenter::Defaults::Timestamps do
   let(:time_now) { Time.now }
   let(:time) { 'Fri, 17 Feb 2012 01:46:08 +0100' }
 
-  let(:object) { mock(Object, created_at: time_now, updated_at: time_now) }
-  let(:template) { mock(Object) }
+  let(:object) { double(Object, created_at: time_now, updated_at: time_now) }
+  let(:template) { double(Object) }
 
   let(:klass) { DummyPresenter.new(object, template) }
 

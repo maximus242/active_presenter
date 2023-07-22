@@ -3,8 +3,8 @@ require 'support/dummy_presenter'
 
 
 describe ActionPresenter::Base do
-  let(:template) { mock(Object) }
-  let(:object) { mock(Object) }
+  let(:template) { double(Object) }
+  let(:object) { double(Object) }
 
   let(:klass) { DummyPresenter }
   let(:presenter) { klass.new(object, template) }

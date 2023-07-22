@@ -17,6 +17,7 @@ Gem::Specification.new do |s|
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
+  s.required_ruby_version = '>=3.2.2'
 
   s.add_dependency 'actionpack'
   s.add_dependency 'named_accessors'
